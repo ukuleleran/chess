@@ -1,0 +1,11 @@
++--------------+
+|   4D Chess   |
++--------------+
+
+Class Definitions
+
+	Board
+
+	Piece
+
+	Player
