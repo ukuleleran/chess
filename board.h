@@ -6,11 +6,16 @@
  *                  container for game pieces and handles encoding and
  *                  decoding scenes in the game.
  ******************************************************************************/
- 
+
+#ifndef CHESS_BOARD
+#define CHESS_BOARD
+
 #include <vector>
 #include <string>
 #include "Globals.h"
 #include "Piece.h"
+
+using namespace std;
  
 class Board
 {
@@ -28,3 +33,5 @@ class Board
         string  encode();
         void    decode(string s);
 };
+
+#endif

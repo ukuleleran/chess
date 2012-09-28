@@ -7,6 +7,9 @@
  *                  status.
  ******************************************************************************/
  
+#ifndef CHESS_PLAYER
+#define CHESS_PLAYER
+ 
 #include "Board.h"
 #include "Globals.h"
  
@@ -23,3 +26,5 @@ class Player
         
         const Move&     move(const Board& board) const;
 };
+
+#endif

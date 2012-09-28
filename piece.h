@@ -7,8 +7,13 @@
  *                  and handles encoding and decoding of itself.
  ******************************************************************************/
 
+#ifndef CHESS_PIECE
+#define CHESS_PIECE
+
 #include <string>
 #include "Globals.h"
+
+using namespace std;
  
 class Piece
 {
@@ -18,7 +23,7 @@ class Piece
         
     public:
         Piece();
-        Piece(const Piece& other)
+        Piece(const Piece& other);
         ~Piece();
         Piece& operator=(const Piece& other);
         
@@ -27,3 +32,5 @@ class Piece
         string          encode();
         void            decode(string s);
 };
+
+#endif

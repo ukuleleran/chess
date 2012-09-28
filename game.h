@@ -5,10 +5,17 @@
  * Description:     This file declares the Game class. This class is a
  *                  controller for all mechanics within the game model.
  ******************************************************************************/
- 
+
+#ifndef CHESS_GAME
+#define CHESS_GAME
+
+#include <string>
 #include "Globals.h"
 #include "Board.h"
- 
+#include "Player.h"
+
+using namespace std;
+
 class Game
 {
     private:
@@ -25,3 +32,5 @@ class Game
         string  encode();
         void    decode(string s);
 };
+
+#endif
