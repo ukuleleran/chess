@@ -5,6 +5,11 @@
  ******************************************************************************/
 
 #include <iostream>
+#include "globals.h"
+#include "game.h"
+#include "board.h"
+#include "player.h"
+#include "piece.h"
 
 using namespace std;
 

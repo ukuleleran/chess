@@ -35,6 +35,6 @@ Class Definitions
 			move()
 Other Types and Constants
 	enum {KING, QUEEN, BISHOP, KNIGHT, ROOK, PAWN}
-	define WHITE = 0, BLACK = 1
-	struct Location {int r, c}
-	struct Move {Location start, Location end}
+	define BLACK = 0, WHITiE = 1
+	struct Position {int r, c}
+	struct Move {Position start, Position end}
