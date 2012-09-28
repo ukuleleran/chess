@@ -1,11 +1,40 @@
-+--------------+
-|   4D Chess   |
-+--------------+
+        +------------------+
+        |      Chess       |
+        +------------------+
 
 Class Definitions
-
+	Game
+		Attributes
+			board
+			players
+		Methods
+			tick()
+			encode()
+			decode()
 	Board
-
+		Attributes
+			pieces
+		Methods
+			hasWinner()
+			numPieces()
+			encode()
+			decode()
 	Piece
-
+		Attributes
+			color
+			type
+		Methods
+			getMoves()
+			isValidMove()
+			encode()
+			decode()
 	Player
+		Attributes
+			color
+		Methods
+			move()
+Other Types and Constants
+	enum {KING, QUEEN, BISHOP, KNIGHT, ROOK, PAWN}
+	define WHITE = 0, BLACK = 1
+	struct Location {int r, c}
+	struct Move {Location start, Location end}
